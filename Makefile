@@ -1,12 +1,12 @@
 all: withoutlock mutex pv
 
-withoutlock: practice2_withoutlock.c
+withoutlock: practice1_withoutlock.c
 	gcc -Wall -pthread -o $@ $^
 
-mutex: practice2_mutex.c
+mutex: practice1_mutex.c
 	gcc -Wall -pthread -o $@ $^
 
-pv: practice2_pv.c
+pv: practice1_pv.c
 	gcc -Wall -pthread -o $@ $^
 
 .PHONY: clean
